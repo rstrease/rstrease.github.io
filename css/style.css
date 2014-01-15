@@ -3903,7 +3903,7 @@ SIDE BAR ARCHIVE LIST
 		z-index: 99;
 	}
 	#logo a img {
-		height: auto;
+		height: 64px;
 		margin-top: 0px;
 	}
 	#jPanelMenu-menu{
