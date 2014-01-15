@@ -3899,7 +3899,7 @@ SIDE BAR ARCHIVE LIST
 		left: 235%;
 		margin: -5px auto 0;
 		position: absolute;
-		width: 124px;
+		/*width: 124px;*/
 		z-index: 99;
 	}
 	#logo a img {
