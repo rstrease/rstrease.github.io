@@ -3901,8 +3901,8 @@ SIDE BAR ARCHIVE LIST
 		z-index: 99;
 	}
 	#logo a img {
-		height: auto;
-		margin-top: 20px;
+		height: 64px;
+		margin-top: 00px;
 	}
 	#jPanelMenu-menu{
 		padding:0;
