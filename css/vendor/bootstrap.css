@@ -6163,7 +6163,7 @@ td.visible-print {
   padding-right: 30px;
 }
 .btn.btn-primary {
-  background-color: #e74c3c;
+  background-color: #34495e;
 }
 .btn.btn-default.dark {
   background-color: #333;
@@ -6171,10 +6171,10 @@ td.visible-print {
 .btn.btn-default.dark:hover,
 .btn.btn-default.dark:focus,
 .btn-group:focus .btn.btn-default.dark.dropdown-toggle {
-  background-color: #e74c3c;
+  background-color: #34495e;
 }
 .btn.btn-default {
-  background-color: #e74c3c;
+  background-color: #34495e;
 }
 .btn.btn-default:hover,
 .btn.btn-default:focus,
@@ -6205,7 +6205,7 @@ td.visible-print {
   background-color: #2c81ba;
 }
 .btn.btn-danger {
-  background-color: #e74c3c;
+  background-color: #34495e;
 }
 .btn.btn-danger:hover,
 .btn.btn-danger:focus,
@@ -6559,7 +6559,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #e74c3c;
+  border-color: #34495e;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -6617,7 +6617,7 @@ input[type="search"].flat:focus,
 input[type="tel"].flat:focus,
 input[type="color"].flat:focus,
 .uneditable-input.flat:focus {
-  border-color: #e74c3c;
+  border-color: #34495e;
 }
 .control-group.error textarea,
 .control-group.error input[type="text"],
@@ -6635,8 +6635,8 @@ input[type="color"].flat:focus,
 .control-group.error input[type="tel"],
 .control-group.error input[type="color"],
 .control-group.error .uneditable-input {
-  border-color: #e74c3c;
-  color: #e74c3c;
+  border-color: #34495e;
+  color: #34495e;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -7177,7 +7177,7 @@ input[type="color"].small,
 }
 .control-group.error > .input-icon,
 .control-group.error input + .input-icon {
-  color: #e74c3c;
+  color: #34495e;
 }
 .control-group.disabled > .input-icon,
 .control-group.disabled input + .input-icon {
@@ -7310,7 +7310,7 @@ textarea[class*="span"] {
 .input-append .active,
 .input-prepend .active {
   background-color: #81eed8;
-  border-color: #e74c3c;
+  border-color: #34495e;
 }
 .control-group.huge .add-on,
 .add-on.huge {
@@ -7328,11 +7328,11 @@ textarea[class*="span"] {
   line-height: 10px;
 }
 .control-group.focus .add-on {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: #34495e;
+  border-color: #34495e;
 }
 .control-group.focus .btn {
-  background-color: #e74c3c;
+  background-color: #34495e;
 }
 .control-group.focus .btn:hover,
 .control-group.focus .btn:focus,
