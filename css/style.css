@@ -460,7 +460,7 @@ a:hover{
     height:40px;
     width:40px;
     text-align:center;
-    background:#555;
+    background:#999;
     color:#fff;
     border-radius:50%;
 	-moz-border-radius: 50%;
@@ -3739,7 +3739,7 @@ label.error {
   text-decoration: none;
 }
 label.error {
-  color: #34495e;
+  color: #D22F2F;
 }
 label{
 	margin-bottom:10px;
