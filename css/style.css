@@ -4761,3 +4761,6 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 400px){
 .btntoTop.active:hover{
 	opacity: 0.8
 }
+#weather_zoom {
+	margin-left: 15px;
+}

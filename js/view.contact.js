@@ -33,7 +33,8 @@ var Contact = {
 					type: "POST",
 					url: "php/contact-form.php",
 					data: {
-						"name": $("#contactForm #name").val(),
+						"fname": $("#contactForm #fname").val(),
+						"lname": $("#contactForm #lname").val(),
 						"email": $("#contactForm #email").val(),
 						"subject": $("#contactForm #subject").val(),
 						"message": $("#contactForm #message").val()
@@ -45,7 +46,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
+							$("#contactForm #fname, #contactForm #lname, #contactForm #email, #contactForm #subject, #contactForm #message")
 								.val("")
 								.blur()
 								.closest(".control-group")
