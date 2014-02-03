@@ -18,7 +18,7 @@ window.onload = loadScript;
  */
 
 lat = 35.2167;
-lng = -97.4167; 
+lng = -97.4167;
 
 var map;
 var MY_MAPTYPE_ID = 'custom_style';
