@@ -2854,7 +2854,7 @@ blockquote.default {
 }
 
 .blog_large .post_content, .blog_single .post_content {
-    margin: 0 0 0 70px;
+    margin: 0 0 0 0px;
 }
 .blog_large .post_meta .metaInfo, .blog_single .post_meta .metaInfo {
 	font-size: 0.9em;

@@ -617,6 +617,17 @@ $(document).ready(function() {
 				else
 					$('.btntoTop').removeClass('active');
 			});
+			
+			
+			//scroll to link
+		$( '.scrollTo' ).on('click', function(event) {
+		    event.preventDefault();
+		    var target = "#" + $(this).data('target');
+		    $('html, body').animate({
+		        scrollTop: $(target).offset().top -90
+		    }, 2000);
+		});
+			
 	/*===========================================================*/
 	/*	Preloader 
 	/*===========================================================*/	
