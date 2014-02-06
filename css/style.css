@@ -4764,3 +4764,7 @@ only screen and (                min-resolution: 2dppx)  and (max-width: 400px){
 #weather_zoom {
 	margin-left: 15px;
 }
+.vendor_img:hover {
+	background: #f2f2f2;
+	color: #555;	
+}
