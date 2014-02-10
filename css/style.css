@@ -2788,12 +2788,12 @@ blockquote.default {
 	padding:50px 0;
 }
 .blog_large .post, .blog_single .post{
-	padding-bottom:50px;
-	margin-bottom:50px;
+	/*padding-bottom:50px;
+	margin-bottom:50px;*/
 	border-bottom:1px solid #f2f2f2;
 }
 .blog_large .post_img, .blog_single .post_img {
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     position: relative;
 }
 .blog_large .post_img img, .blog_single .post_img img {
