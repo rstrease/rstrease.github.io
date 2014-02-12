@@ -35,8 +35,12 @@ var Contact = {
 					data: {
 						"fname": $("#contactForm #fname").val(),
 						"lname": $("#contactForm #lname").val(),
+						"address": $("#contactForm #address").val(),
+						"city": $("#contactForm #city").val(),
+						"state": $("#contactForm #state").val(),
+						"zip": $("#contactForm #zip").val(),
 						"email": $("#contactForm #email").val(),
-						"subject": $("#contactForm #subject").val(),
+						"phone": $("#contactForm #phone").val(),
 						"message": $("#contactForm #message").val()
 					},
 					dataType: "json",
@@ -46,7 +50,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#contactForm #fname, #contactForm #lname, #contactForm #email, #contactForm #subject, #contactForm #message")
+							$("#contactForm #fname, #contactForm #lname, #contactForm #address, #contactForm #city, #contactForm #state, #contactForm #zip, #contactForm #email, #contactForm #phone, #contactForm #message")
 								.val("")
 								.blur()
 								.closest(".control-group")
