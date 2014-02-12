@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'rstrease@windstream.net';
+$myemail = '1@1.com';
 if(empty($_POST['email']))
 {
     $errors .= "\n Error: all fields are required";
