@@ -222,7 +222,7 @@ class PHPMailer {
    * Hosts will be tried in order.
    * @var string
    */
-  public $Host          = 'input host';
+  public $Host          = 'smtp.windstream.net';
 
   /**
    * Sets the default SMTP server port.
@@ -252,13 +252,13 @@ class PHPMailer {
    * Sets SMTP username.
    * @var string
    */
-  public $Username      = 'username';
+  public $Username      = 'rstrease@windstream.net';
 
   /**
    * Sets SMTP password.
    * @var string
    */
-  public $Password      = 'pswd';
+  public $Password      = 'sooners1';
 
   /**
    *  Sets SMTP auth type. Options are LOGIN | PLAIN | NTLM | CRAM-MD5 (default LOGIN)
