@@ -41,6 +41,8 @@ var Contact = {
 						"zip": $("#contactForm #zip").val(),
 						"email": $("#contactForm #email").val(),
 						"phone": $("#contactForm #phone").val(),
+						"insurance": $("#contactForm #insurance").val(),
+						"in_name": $("#contactForm #in_name").val(),
 						"message": $("#contactForm #message").val()
 					},
 					dataType: "json",
@@ -50,7 +52,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#contactForm #fname, #contactForm #lname, #contactForm #address, #contactForm #city, #contactForm #state, #contactForm #zip, #contactForm #email, #contactForm #phone, #contactForm #message")
+							$("#contactForm #fname, #contactForm #lname, #contactForm #address, #contactForm #city, #contactForm #state, #contactForm #zip, #contactForm #email, #contactForm #phone, #contactForm #message, #contactForm #insurance, #contactForm #message")
 								.val("")
 								.blur()
 								.closest(".control-group")
