@@ -33,16 +33,9 @@ var Contact = {
 					type: "POST",
 					url: "php/contact-form.php",
 					data: {
-						"fname": $("#contactForm #fname").val(),
-						"lname": $("#contactForm #lname").val(),
-						"address": $("#contactForm #address").val(),
-						"city": $("#contactForm #city").val(),
-						"state": $("#contactForm #state").val(),
-						"zip": $("#contactForm #zip").val(),
+						"name": $("#contactForm #name").val(),
 						"email": $("#contactForm #email").val(),
-						"phone": $("#contactForm #phone").val(),
-						"insurance": $("#contactForm #insurance").val(),
-						"in_name": $("#contactForm #in_name").val(),
+						"subject": $("#contactForm #subject").val(),
 						"message": $("#contactForm #message").val()
 					},
 					dataType: "json",
@@ -52,7 +45,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#contactForm #fname, #contactForm #lname, #contactForm #address, #contactForm #city, #contactForm #state, #contactForm #zip, #contactForm #email, #contactForm #phone, #contactForm #message, #contactForm #insurance, #contactForm #message")
+							$("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
 								.val("")
 								.blur()
 								.closest(".control-group")

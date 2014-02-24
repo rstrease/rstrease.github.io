@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
 	<link rel="stylesheet" href="css/layout/wide.css" data-name="layout"> 
 	<link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/slick_cof.css" media="screen" />
 	<style>
 		.list_style li {
 			line-height: 20px;
@@ -46,11 +47,11 @@
 				<div class="col-sm-10 col-md-10 col-lg-10">
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
-	
+
 							<li><a href="index.html">Home</a></li>
-	
+
 							<li><a href="about.html">About</a></li>
-	
+
 							<li><a href="#">Services</a>
 								<ul>
 									<li><a href="residential.html">Residential</a></li>
@@ -61,7 +62,7 @@
 									<li><a href="siding.html">Siding</a></li>
 								</ul>
 							</li>
-	
+
 							<li><a href="#">Products</a>
 								<ul>
 									<li><a href="class_4_ir_shingle.html">Class 4 IR Shingle</a></li>
@@ -71,7 +72,7 @@
 									<li><a href="certainteed.html">CertainTeed</a></li>
 								</ul>
 							</li>
-	
+
 							<li><a href="#" id="current">For Homeowners</a>
 								<ul>
 									<li><a href="faq.html">FAQ</a></li>
@@ -81,8 +82,14 @@
 									<li><a href="warranty.html">Warranty</a></li>
 								</ul>
 							</li>
-	
-							<li><a href="contact.html">Estimate</a></li>
+							
+							<li><a href="#">Contact Us</a>
+								<ul>
+									<li><a href="contact.html">General Contact</a></li>
+									<li><a href="estimate.html">Estimate</a></li>
+									<li><a href="feedback.html">Feedback</a></li>
+								</ul>
+							</li>
 							
 						</ul>
 					</nav>
@@ -191,7 +198,7 @@
 						</div>
 					</div>
 					<div class="col-sm-3 col-md-3 col-lg-3">
-						<a class="btn btn-large btn-default" href="contact.html">
+						<a class="btn btn-large btn-default" href="estimate.html">
 							<i class="fa fa-file-text-o"></i>
 							Free Estimate
 						</a>
@@ -205,7 +212,7 @@
 	
 	
 	<!--start footer-->
-	<footer class="footer">
+<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-md-8 col-lg-8">
@@ -214,7 +221,7 @@
 						<div class="gDot widget"></div>
 					</div>
 					<div class="widfoot_content">
-						<p>Donec earum rerum hic tenetur ans sapiente delectus, ut aut reiciendise voluptat maiores alias consequaturs aut perferendis doloribus asperiores.</p>
+						<p>At Gladiator Roofing &amp; Construction, Inc., our mission is to serve the community both residentially and commercially with the most qualified uncompromising workmanship and service. We work with dedication and integrity, and strive for a position of leadership in the roofing industry.</p>
 						<ul class="contact-details-alt">
 							<li><i class="fa fa-map-marker"></i> <p><strong>Address</strong>: P.O. Box 721623 Norman, OK. 73070</p></li>
 							<li><i class="fa fa-user"></i> <p><strong>Phone</strong>: (405) 763-7777</p></li>
@@ -227,20 +234,38 @@
 						<h4>Contact Us</h4>
 						<div class="gDot widget"></div>
 					</div>
-					<div class="row">
-						<div class="form-group" style="margin-left: 15px;">
-							<div class="widfoot_content">
-								<input type="text" id="name" name="name" class="form-control" maxlength="100" data-msg-required="Please enter name." value="" placeholder="Name" required="">
-								<input type="email" id="email" name="email" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter email address." value="" placeholder="E-mail" >
-								<textarea id="message" name="message" rows="5" cols="25" maxlength="5000" placeholder="Message"></textarea>
-							</div>
+					<section class="slick">
+
+
+						<div class="estimate-form" style="background: none; margin-top: 15px;">
+
+							<form action="" name="submit" id="submit" method="post">
+
+								<div >
+
+									<div class="field">
+										<input name="name" placeholder="Name" type="text" id="name" required />
+										<span class="entypo-vcard icon"></span>
+									</div>
+
+									<div class="field">
+										<input name="email" placeholder="Your email" type="email" id="email_footer" required />
+										<span class="entypo-mail icon"></span> 
+									</div>
+									
+								</div>
+
+								<div class="field">
+									<textarea name="message" placeholder="Message" id="message" class="message" style="height: 100px;"></textarea>
+									<span class="entypo-comment icon"></span>
+								</div>
+
+								<input class="send" type="submit" data-loading-text="Loading..." value="Submit">
+							</form>
+
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<input type="submit" data-loading-text="Loading..." class="btn btn-default btn-lg" value="Submit">
-						</div>
-					</div>
+
+					</section>
 				</div>
 			</div>
 		</div>
@@ -251,7 +276,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<p class="copyright">&copy; Copyright 2013 Clava | Powered by  <a href="http://jogjafile.com"> JOGJAfile</a></p>
+					<p class="copyright">&copy; Copyright 2014 Gladiator Roofing</p>
 				</div>
 				
 				<div class="col-lg-6 col-md-6 col-sm-6">
@@ -259,9 +284,7 @@
 						<ul class="footbot_social">
 							<li><a class="fb" href="#." data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
 							<li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="dribbble" href="#." data-placement="top" data-toggle="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
-							<li><a class="skype" href="#." data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
-							<li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+							<li><a class="linkedin" href="#." data-placement="top" data-toggle="tooltip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
