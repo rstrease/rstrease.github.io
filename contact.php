@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'francescapinky4@gmail.com';
+$myemail = 'rstrease@gmail.com';
 if(empty($_POST['email']))
 {
     $errors .= "\n Error: all fields are required";
@@ -18,7 +18,7 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Subscribe form submission FROM Clava: $name";
+	$email_subject = "Contact form submission FROM: $name";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	$headers = "From: $myemail\n"; 

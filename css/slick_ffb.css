@@ -323,8 +323,8 @@ When adjusting the reset is adviced to check up the elements on your page, as th
 	overflow: auto;
 }
 .slick .field textarea.message {
-	height: 159px;
-	max-height: 159px;
+	height: 200px;
+	max-height: 200px;
 }
 .slick .field textarea.project {
 	height: 98px;

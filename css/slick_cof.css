@@ -775,6 +775,14 @@ x:-o-prefocus, #arrow-select {
 .slick .terms-window a.close:hover {
 	color: #333;
 }
+.slick .footer_links a {
+    color: #fff;
+    text-decoration: none;
+}
+.slick .footer_links a:hover {
+    color: #999;
+    text-decoration: none;
+}
 
 /*  ==================
     7. TRANSITIONS
