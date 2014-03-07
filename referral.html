@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/layout/wide.css" data-name="layout"> 
 	<link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/slick_cof.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/slick_cfsp.css" media="screen" />
 	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
@@ -81,7 +82,7 @@
 								<ul>
 									<li><a href="contact.html">General Contact</a></li>
 									<li><a href="estimate.html">Estimate</a></li>
-									<li><a href="feedback.html">Feedback</a></li>
+									<!-- <li><a href="feedback.html">Feedback</a></li> -->
 								</ul>
 							</li>
 							
@@ -128,7 +129,7 @@
 								</div>
 								<p>At Gladiator Roofing and Construction customer satisfaction is our highest priority. We believe that doing business the right way and treating our clients the way we would want to be treated is the foundation of our success and growth. We want each and every client to be an intricate part in that success. Our company was built by referrals and always will be. Your referral is the greatest compliment we receive. We want to reward our clients for referring us to your friends and neighbors by putting a little extra cash in your pocket. Simply refer us a to your friends and neighbors, and if we get the job,  then you get $300 for each job referred. </p>
 								<div style="margin-top: 20px;">
-									<a class="btn btn-large btn-default" href="#">
+									<a class="btn btn-large btn-default" href="#slick-popup" class="popup-button">
 										<i class="fa fa-file-text-o"></i>
 										Submit Referral
 									</a>
@@ -149,7 +150,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>		
+		
 		<section class="promo_box">
 			<div class="container">
 				<div class="row">
@@ -251,7 +253,7 @@
 						<ul style="list-style: none;">
 							<li><a href="contact.html">General Contact</a></li>
 							<li><a href="estimate.html">Estimate</a></li>
-							<li><a href="feedback.html">Feedback</a></li>
+							<!-- <li><a href="feedback.html">Feedback</a></li> -->
 						</ul>
 					</div>
 				</section>
@@ -281,7 +283,64 @@
 		</div>
 	</section>
 	
-	
+	<!-- popup dialog for inputting referral information -->
+	<div id="slick-popup">
+		<a href="#close" class="close-overlay"></a>
+		<section id="slick">
+			<!-- Social buttons -->
+			<div class="sb">
+				<a href="#" class="entypo-cancel close-top"></a>
+			</div> 
+			<!-- Contact form -->
+			<div class="contact-form">
+				<div class="intro" style="font-size: 24px; font-weight: 600;">Referral Program</div>
+				<!-- Intro text -->
+				<p class="intro"><b>A referral is the greatest compliment we receive. </br></b> Send us your information as well as the information for the person that you are referring. </br>If they use us you will receive $300.</p>
+				<!-- Form -->
+				<div class="w-100">
+					<!-- Form fields -->
+					<form action="" name="contact" id="contact" method="post">
+						<div class="intro" style="margin-bottom: 5px;">Your Information</div>
+						<!-- Name input -->
+						<div class="field">
+							<input name="name" placeholder="Your name" type="text" id="name" required />
+							<span class="entypo-user icon"></span>
+						</div>
+						<!-- Email input -->
+						<div class="field">
+							<input name="email" placeholder="your@domain.com" type="email" id="email" required />
+							<span class="entypo-mail icon"></span>
+						</div>
+						<!-- Phone input -->
+						<div class="field">
+							<input name="phone" placeholder="(123) 123-1234" type="tel" id="phone" />
+							<span class="entypo-mobile icon"></span>
+						</div>
+						<div class="intro" style="margin-bottom: 5px;">Person You Are Referring</div> 
+						<!-- Name input -->
+						<div class="field">
+							<input name="ref_name" placeholder="Your name" type="text" id="ref_name" required />
+							<span class="entypo-user icon"></span>
+						</div>
+						<!-- Email input -->
+						<div class="field">
+							<input name="ref_email" placeholder="your@domain.com" type="email" id="ref_email" required />
+							<span class="entypo-mail icon"></span>
+						</div>
+						<!-- Phone input -->
+						<div class="field">
+							<input name="ref_phone" placeholder="(123) 123-1234" type="tel" id="ref_phone" />
+							<span class="entypo-mobile icon"></span>
+						</div>
+						<!-- Send button -->
+						<input type="submit" value="Send" class="send" form="contact" name="send" />
+					</form>
+					<!-- / Form fields -->
+				</div>
+			</div>
+			<!-- / Contact form -->            
+		</section>
+	</div>
 	
 	
 	
