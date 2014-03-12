@@ -26,24 +26,20 @@ var Contact = {
 
 	validations: function() {
 
-		$("#submit").validate({
+		$("#referralForm").validate({
 			submitHandler: function(form) {
 
 				$.ajax({
 					type: "POST",
-					url: "php/estimate-form.php",
+					url: "php/referral-form.php",
 					data: {
-						"first_name": $("#submit #first_name").val(),
-						"last_name": $("#submit #last_name").val(),
-						"email": $("#submit #email").val(),
-						"phone": $("#submit #phone").val(),
-						"address": $("#submit #address").val(),
-						"city": $("#submit #city").val(),
-						"state": $("#submit #state").val(),
-						"zipcode": $("#submit #zipcode").val(),
-						"company": $("#submit #company").val(),
-						"agent": $("#submit #agent").val(),
-						"comments": $("#submit #comments").val()
+						"name": $("#referralForm #name").val(),
+						"email": $("#referralForm #email").val(),
+						"phone": $("#referralForm #phone").val(),
+						"ref_name": $("#referralForm #ref_name").val(),
+						"ref_email": $("#referralForm #ref_email").val(),
+						"ref_phone": $("#referralForm #ref_phone").val(),
+
 					},
 					dataType: "json",
 					success: function (data) {
@@ -52,7 +48,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#submit #first_name, #submit #last_name, #submit #email, #submit #phone, #submit #address, #submit #city, #submit #state, #submit #zipcode, #submit #company, #submit #agent, #submit #comments")
+							$("#referralForm #name, #referralForm #email, #referralForm #phone, #referralForm #ref_name, #referralForm #ref_email, #referralForm #ref_phone")
 								.val("")
 								.blur()
 								.closest(".control-group")
@@ -82,10 +78,7 @@ var Contact = {
 				});
 			},
 			rules: {
-				first_name: {
-					required: true
-				},
-				last_name: {
+				name: {
 					required: true
 				},
 				email: {
@@ -96,28 +89,16 @@ var Contact = {
       				required: true,
       				phoneUS: true
     			},
-    			address: {
-					required: true
+    			ref_name: {
+    				required: true
     			},
-    			city: {
-					required: true
+    			ref_email: {
+    				required: true,
+    				email: true
     			},
-    			state: {
-					required: true,
-					minlength: 2,
-					maxlength: 2
-    			},
-    			zipcode: {
-					required: true,
-					number: true,
-					maxlength: 5,
-					minlength: 5
-    			},
-    			company: {
-					required: true
-    			},
-    			agent: {
-					required: true
+    			ref_phone: {
+    					required: true,
+    					phoneUS: true
     			}
 			},
 			

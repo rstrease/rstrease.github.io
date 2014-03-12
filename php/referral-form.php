@@ -9,67 +9,43 @@ require 'php-mailer/class.phpmailer.php';
 // Your email address
 $to = 'rstrease@gmail.com';
 
-$subject = "Free Estimate Request";
+$subject = "Customer Referral";
 
 if($to) {
 
-	$fname = $_POST['first_name'];
-	$lname = $_POST['last_name'];
+	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
-	$address = $_POST['address'];
-	$city = $_POST['city'];
-	$state = $_POST['state'];
-	$zip = $_POST['zipcode'];
-	$company = $_POST['company'];
-	$agent = $_POST['agent'];
-	$comments = $_POST['comments'];
+	$ref_name = $_POST['ref_name'];
+	$ref_email = $_POST['ref_email'];
+	$ref_phone = $_POST['ref_phone'];
 	
 	$fields = array(
 		0 => array(
-			'text' => 'First Name',
-			'val' => $_POST['first_name']
+			'text' => 'Name',
+			'val' => $_POST['name']
 		),
 		1 => array(
-			'text' => 'Last Name',
-			'val' => $_POST['last_name']
-		),
-		2 => array(
 			'text' => 'Email address',
 			'val' => $_POST['email']
 		),
-		3 => array(
+		2 => array(
 			'text' => 'Phone Number',
 			'val' => $_POST['phone']
 		),
+		3 => array(
+			'text' => 'Name of person being referred',
+			'val' => $_POST['ref_name']
+		),
 		4 => array(
-			'text' => 'Address',
-			'val' => $_POST['address']
+			'text' => 'Email address of person being referred',
+			'val' => $_POST['ref_email']
 		),
 		5 => array(
-			'text' => 'City',
-			'val' => $_POST['city']
-		),
-		6 => array(
-			'text' => 'State',
-			'val' => $_POST['state']
-		),
-		7 => array(
-			'text' => 'Zip Code',
-			'val' => $_POST['zipcode']
-		),
-		8 => array(
-			'text' => 'Insurance Company',
-			'val' => $_POST['company']
-		),
-		8 => array(
-			'text' => 'Insurance Agent',
-			'val' => $_POST['agent']
-		),
-		10 => array(
-			'text' => 'Message',
-			'val' => $_POST['comments']
+			'text' => 'Phone number of person being referred',
+			'val' => $_POST['ref_phone']
 		)
+
 	);
 	
 	$message = "";
@@ -90,7 +66,7 @@ if($to) {
 	//$mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted
 
 	$mail->From = $email;
-	$mail->FromName = $_POST['first_name']. ' ' . $_POST['last_name'];
+	$mail->FromName = $_POST['name'];
 	$mail->AddAddress($to);								  // Add a recipient
 	$mail->AddReplyTo($email, $name);
 
