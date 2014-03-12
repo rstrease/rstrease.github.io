@@ -33,9 +33,9 @@ var Contact = {
 					type: "POST",
 					url: "php/referral-form.php",
 					data: {
-						"name": $("#referralForm #name").val(),
-						"email": $("#referralForm #email").val(),
-						"phone": $("#referralForm #phone").val(),
+						"rfname": $("#referralForm #rfname").val(),
+						"rfemail": $("#referralForm #rfemail").val(),
+						"rfphone": $("#referralForm #rfphone").val(),
 						"ref_name": $("#referralForm #ref_name").val(),
 						"ref_email": $("#referralForm #ref_email").val(),
 						"ref_phone": $("#referralForm #ref_phone").val(),
@@ -48,7 +48,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#referralForm #name, #referralForm #email, #referralForm #phone, #referralForm #ref_name, #referralForm #ref_email, #referralForm #ref_phone")
+							$("#referralForm #rfname, #referralForm #rfemail, #referralForm #rfphone, #referralForm #ref_name, #referralForm #ref_email, #referralForm #ref_phone")
 								.val("")
 								.blur()
 								.closest(".control-group")
@@ -78,7 +78,7 @@ var Contact = {
 				});
 			},
 			rules: {
-				name: {
+				rfname: {
 					required: true
 				},
 				email: {
@@ -97,8 +97,8 @@ var Contact = {
     				email: true
     			},
     			ref_phone: {
-    					required: true,
-    					phoneUS: true
+    				required: true,
+    				phoneUS: true
     			}
 			},
 			

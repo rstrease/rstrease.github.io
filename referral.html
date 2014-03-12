@@ -283,73 +283,76 @@
 		</div>
 	</section>
 	
-	<!-- popup dialog for inputting referral information -->
 	<div id="slick-popup">
-		<a href="#close" class="close-overlay"></a>
+		<a class="close-overlay" href="#close"></a>
+		
 		<section id="slick">
-			<!-- Social buttons -->
+			
+	
 			<div class="sb">
-				<a href="#" class="entypo-cancel close-top"></a>
-			</div> 
+				<a class="entypo-cancel close-top" href="#"></a>
+			</div>
 			
 			<!-- Contact form -->
+	
 			<div class="referral-form">
 			
-				<div class="intro" style="font-size: 24px; font-weight: 600;">Referral Program</div>
-				<!-- Intro text -->
-				<p class="intro"><b>A referral is the greatest compliment we receive. </br></b> Send us your information as well as the information for the person that you are referring. </br>If they use us you will receive $300.</p>
-				<!-- Form -->
-				
+				<div class="alert alert-success hidden alert-dismissable" id="contactSuccess">
+					<button class="close" data-dismiss="alert" type="button">×</button> <strong>Success!</strong> Your message has been sent to us.
+				</div>
+			
+				<div class="alert alert-error hidden" id="contactError">
+					<button class="close" data-dismiss="alert" type="button">×</button> <strong>Error!</strong> There was an error sending your message.
+				</div>
+			
+				<div class="intro" style="font-size: 24px; font-weight: 600;">
+					Referral Program
+				</div><!-- Intro text -->
+	
+				<p class="intro"><b>A referral is the greatest compliment we receive.<br></b> Send us your information as well as the information for the person that you are referring.<br>
+				If they use us you will receive $300.</p><!-- Form -->
+	
 				<div class="w-100">
 					<!-- Form fields -->
-					<form id="referralForm" action="PHP/referral-form.php" novalidate="novalidate">
-					
-					<div class="alert alert-success hidden alert-dismissable" id="contactSuccess">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> <strong>Success!</strong> Your message has been sent to us. 
-					</div>
-					<div class="alert alert-error hidden" id="contactError">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> <strong>Error!</strong> There was an error sending your message. 
-					</div>
-					
+	
+					<form action="PHP/referral-form.php" id="referralForm" name="referralForm" novalidate="novalidate">
 						<div class="intro" style="margin-bottom: 5px;">Your Information</div>
-						<!-- Name input -->
-						<div class="field">
-							<input type="text" id="name" name="name" class="form-control" maxlength="100" data-msg-required="Please enter your name." value="" placeholder="Name" >
-							<span class="entypo-vcard icon"></span>
-						</div>
-						<!-- Email input -->
-						<div class="field">
-							<input type="email" id="email" name="email" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter your email address." value="" placeholder="E-mail" >
-							<span class="entypo-mail icon"></span>
-						</div>
-						<!-- Phone input -->
-						<div class="field">
-							<input type="text" id="phone" name="phone" class="form-control" data-msg-required="Please enter your phone number." value="" placeholder="Phone" >
-							<span class="entypo-mobile icon"></span> 
-						</div>
-						<div class="intro" style="margin-bottom: 5px;">Person You Are Referring</div> 
-						<!-- Name input -->
-						<div class="field">
-							<input type="text" id="ref_name" name="ref_name" class="form-control" maxlength="100" data-msg-required="Please enter name." value="" placeholder="Name" >
-							<span class="entypo-vcard icon"></span>
-						</div>
-						<!-- Email input -->
-						<div class="field">
-							<input type="email" id="ref_email" name="ref_email" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter email address." value="" placeholder="E-mail" >
-							<span class="entypo-mail icon"></span>
-						</div>
-						<!-- Phone input -->
-						<div class="field">
-							<input type="text" id="ref_phone" name="ref_phone" class="form-control" data-msg-required="Please enter phone number." value="" placeholder="Phone" >
-							<span class="entypo-mobile icon"></span> 
-						</div>
+							<!-- Name input -->
+							<div class="field">
+								<input type="text" id="rfname" name="rfname" class="form-control" maxlength="100" data-msg-required="Please enter your name." value="" placeholder="Name" >
+								<span class="entypo-vcard icon"></span>
+							</div>
+							<!-- Email input -->
+							<div class="field">
+								<input type="email" id="rfemail" name="rfemail" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter your email address." value="" placeholder="E-mail" >
+								<span class="entypo-mail icon"></span>
+							</div>
+							<!-- Phone input -->
+							<div class="field">
+								<input type="text" id="rfphone" name="rfphone" class="form-control" data-msg-required="Please enter your phone number." value="" placeholder="Phone" >
+								<span class="entypo-mobile icon"></span> 
+							</div>
+							<div class="intro" style="margin-bottom: 5px;">Person You Are Referring</div> 
+							<!-- Name input -->
+							<div class="field">
+								<input type="text" id="ref_name" name="ref_name" class="form-control" maxlength="100" data-msg-required="Please enter name." value="" placeholder="Name" >
+								<span class="entypo-vcard icon"></span>
+							</div>
+							<!-- Email input -->
+							<div class="field">
+								<input type="email" id="ref_email" name="ref_email" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter email address." value="" placeholder="E-mail" >
+								<span class="entypo-mail icon"></span>
+							</div>
+							<!-- Phone input -->
+							<div class="field">
+								<input type="text" id="ref_phone" name="ref_phone" class="form-control" data-msg-required="Please enter phone number." value="" placeholder="Phone" >
+								<span class="entypo-mobile icon"></span> 
+							</div>
 						<!-- Send button -->
-						<input type="submit" data-loading-text="Loading..." class="btn btn-default btn-lg" value="Send Message" style="padding: 9px 12px 10px;">
-					</form>
-					<!-- / Form fields -->
+						<input class="btn btn-default btn-lg" data-loading-text="Loading..." style="padding: 9px 12px 10px;" type="submit" value="Send Message">
+					</form><!-- / Form fields -->
 				</div>
-			</div>
-			<!-- / Contact form -->            
+			</div><!-- / Contact form -->
 		</section>
 	</div>
 	

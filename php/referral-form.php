@@ -13,9 +13,9 @@ $subject = "Customer Referral";
 
 if($to) {
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$phone = $_POST['phone'];
+	$name = $_POST['rfname'];
+	$email = $_POST['rfemail'];
+	$phone = $_POST['rfphone'];
 	$ref_name = $_POST['ref_name'];
 	$ref_email = $_POST['ref_email'];
 	$ref_phone = $_POST['ref_phone'];
@@ -23,15 +23,15 @@ if($to) {
 	$fields = array(
 		0 => array(
 			'text' => 'Name',
-			'val' => $_POST['name']
+			'val' => $_POST['rfname']
 		),
 		1 => array(
 			'text' => 'Email address',
-			'val' => $_POST['email']
+			'val' => $_POST['rfemail']
 		),
 		2 => array(
 			'text' => 'Phone Number',
-			'val' => $_POST['phone']
+			'val' => $_POST['rfphone']
 		),
 		3 => array(
 			'text' => 'Name of person being referred',

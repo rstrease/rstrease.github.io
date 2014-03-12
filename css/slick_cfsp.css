@@ -37,7 +37,7 @@
     2. ITEM RESET
     ==================  */
 
-#slick * {
+#slick  {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -100,6 +100,19 @@ When adjusting the reset is adviced to check up the elements on your page, as th
 	overflow: auto;
 }
 #slick .contact-form {
+	background: #fff;
+	position: relative;
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 30px;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0 8px 0 rgba(0,0,0,0.7);
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.7);
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+#slick .referral-form {
 	background: #fff;
 	position: relative;
 	width: 100%;
