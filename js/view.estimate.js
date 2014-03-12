@@ -26,17 +26,24 @@ var Contact = {
 
 	validations: function() {
 
-		$("#contactForm").validate({
+		$("#submit").validate({
 			submitHandler: function(form) {
 
 				$.ajax({
 					type: "POST",
-					url: "php/contact-form.php",
+					url: "php/estimate-form.php",
 					data: {
-						"name": $("#contactForm #name").val(),
-						"email": $("#contactForm #email").val(),
-						"subject": $("#contactForm #subject").val(),
-						"message": $("#contactForm #message").val()
+						"first_name": $("#submit #first_name").val(),
+						"last_name": $("#submit #last_name").val(),
+						"email": $("#submit #email").val(),
+						"phone": $("#submit #phone").val(),
+						"address": $("#submit #address").val(),
+						"city": $("#submit #city").val(),
+						"state": $("#submit #state").val(),
+						"zipcode": $("#submit #zipcode").val(),
+						"company": $("#submit #company").val(),
+						"agent": $("#submit #agent").val(),
+						"message": $("#submit #message").val()
 					},
 					dataType: "json",
 					success: function (data) {
@@ -45,7 +52,7 @@ var Contact = {
 							$("#contactSuccess").removeClass("hidden");
 							$("#contactError").addClass("hidden");
 
-							$("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
+							$("#submit #first_name, #submit #email, #submit #phone, #submit #address, #submit #city, #submit #state, #submit #zipcode, #submit #company, #submit #agent, #submit #message")
 								.val("")
 								.blur()
 								.closest(".control-group")
@@ -75,17 +82,45 @@ var Contact = {
 				});
 			},
 			rules: {
-				name: {
+				first_name: {
+					required: true
+				},
+				last_name: {
 					required: true
 				},
 				email: {
 					required: true,
 					email: true
 				},
-				subject: {
+				phone: {
+      				required: true,
+      				phoneUS: true
+    			},
+    			address: {
 					required: true
-				}
+    			},
+    			city: {
+					required: true
+    			},
+    			state: {
+					required: true,
+					minlength: 2,
+					maxlength: 2
+    			},
+    			zipcode: {
+					required: true,
+					number: true,
+					maxlength: 5,
+					minlength: 5
+    			},
+    			company: {
+					required: true
+    			},
+    			agent: {
+					required: true
+    			}
 			},
+			
 			highlight: function (element) {
 				$(element)
 					.closest(".control-group")

@@ -136,34 +136,62 @@
 					<section class="slick">
 
 
-						<div class="estimate-form">
+						<div class="estimate_form">
 
-							<form action="" name="submit" id="submit" method="post">
-
+							<form action="PHP/contact-form.php" name="submit" id="submit" method="post">
+								
 								<div class="w-47 mr-6">
-
 									<div class="field">
-										<input name="first_name" placeholder="First name" type="text" id="first_name" required />
+										<input type="text" id="first_name" name="first_name" class="form-control" maxlength="100" data-msg-required="Please enter your first name." value="" placeholder="First Name" >
 										<span class="entypo-vcard icon"></span>
 									</div>
-
 									<div class="field">
-										<input name="email" placeholder="Your email" type="email" id="email" required />
+										<input type="email" id="email" name="email" class="form-control" maxlength="100" data-msg-email="Please enter a valid email address." data-msg-required="Please enter your email address." value="" placeholder="E-mail" >
 										<span class="entypo-mail icon"></span>
 									</div>
 
+								</div>
+								
+								<div class="w-47">
 									<div class="field">
-										<input name="address" placeholder="Billing address" type="text" id="address" required />
-										<span class="entypo-address icon"></span>
+										<input type="text" id="last_name" name="last_name" class="form-control" maxlength="100" data-msg-required="Please enter your last name." value="" placeholder="Last Name" >
+										<span class="entypo-vcard icon"></span>
 									</div>
+									<div class="field">
+										<input type="text" id="phone" name="phone" class="form-control" data-msg-required="Please enter your phone number." value="" placeholder="Phone" >
+										<span class="entypo-mobile icon"></span> 
+									</div>
+								</div>
+								
+								<div class="field">
+										<input type="text" id="address" name="address" class="form-control" maxlength="100" data-msg-required="Please enter your address." value="" placeholder="Address" >
+										<span class="entypo-home icon"></span>
+									</div>
+								
+								<div class="w-47 mr-6" style="margin-right: 6.5%;">
 
 									<div class="field">
-										<input name="state" placeholder="State" type="text" id="state" required />
-										<span class="entypo-right-circled icon"></span> 
+										<input type="text" id="city" name="city" class="form-control" maxlength="100" data-msg-required="Please enter your city." value="" placeholder="City" >
+										<span class="entypo-home icon"></span> 
 									</div>
+									</div>
+								<div class="w-20 mr-6" style="margin-right: 6.5%;">
+									<div class="field">
+										<input type="text" id="state" name="state" class="form-control" maxlength="100" data-msg-required="Please enter your state." value="" placeholder="State" >
+										<span class="entypo-home icon"></span> 
+									</div>
+								</div>
+								<div class="w-20">
+									<div class="field">
+										<input type="text" id="zipcode" name="zipcode" class="form-control" maxlength="100" data-msg-required="Please enter your zip code." value="" placeholder="Zip" >
+										<span class="entypo-home icon"></span>
+									</div>
+								</div>
+									
+								<div class="w-47 mr-6">
 
 									<div class="field">
-										<input name="company" placeholder="Insurance Company" type="text" id="company" required />
+										<input type="text" id="company" name="company" class="form-control" maxlength="100" data-msg-required="Please enter your insurance company." value="" placeholder="Insurance Company" >
 										<span class="entypo-suitcase icon"></span>
 									</div>
 								</div>
@@ -171,37 +199,17 @@
 								<div class="w-47">
 
 									<div class="field">
-										<input name="last_name" placeholder="Last name" type="text" id="last_name" required />
-										<span class="entypo-vcard icon"></span>
-									</div>
-
-									<div class="field">
-										<input name="phone" placeholder="Contact phone" type="tel" id="phone" required />
-										<span class="entypo-mobile icon"></span> 
-									</div>
-
-									<div class="field">
-										<input name="city" placeholder="City" type="text" id="city" required />
-										<span class="entypo-home icon"></span> 
-									</div>
-
-									<div class="field">
-										<input name="postal" placeholder="Postal code" type="text" id="postal" required />
-										<span class="entypo-right-circled icon"></span>
-									</div>
-
-									<div class="field">
-										<input name="vat" placeholder="Insurance Agent" type="text" id="vat" required />
-										<span class="entypo-tag icon"></span>
+										<input type="text" id="agent" name="agent" class="form-control" maxlength="100" data-msg-required="Please enter your agent's name." value="" placeholder="Insurance Agent" >
+										<span class="entypo-user icon"></span>
 									</div>
 								</div>
 
-								<div class="field mt-10">
-									<textarea name="comments" placeholder="Additional message" id="comments" class="message" style="margin-bottom: 0;"></textarea>
-									<span class="entypo-comment icon"></span>
+								<div class="field">
+									<textarea name="comments" placeholder="Additional Message" id="comments" class="message" style="margin-bottom: 0;"></textarea>
+									<span class="entypo-comment icon" style="height: 100%;"></span>
 								</div>
 
-								<input type="submit" value="Submit" class="send" form="submit" name="send" />
+								<input type="submit" data-loading-text="Loading..." class="btn btn-default btn-lg" value="Send Message" style="padding: 9px 12px 10px;">
 							</form>
 
 						</div>
@@ -398,7 +406,8 @@
 <script type="text/javascript" src="js/tweetable.jquery.js"></script>
 <script type="text/javascript" src="js/jquery.timeago.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
-<script type="text/javascript" src="js/view.contact.js"></script>
+<script type="text/javascript" src="js/view.estimate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
 <script src="js/main.js"></script>
 
 </body>
